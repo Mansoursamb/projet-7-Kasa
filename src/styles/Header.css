@@ -1,0 +1,12 @@
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+.lmj-logo {
+  height: 50px;
+}
