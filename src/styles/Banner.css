@@ -1,5 +1,10 @@
 .lmj-hero {
   height: 150px;
-  width: 90%;
+  width: 100%;
   object-fit: cover;
+  place-self: center;
+  display: flex;
+  margin: 30px 0 30px 0;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
