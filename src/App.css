@@ -26,6 +26,13 @@
 .App-link {
   color: #61dafb;
 }
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1240px;
+  flex-wrap: wrap;
+}
 
 @keyframes App-logo-spin {
   from {

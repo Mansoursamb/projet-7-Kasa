@@ -1,0 +1,12 @@
+.Card {
+  height: 340px;
+  max-width: 340px;
+  background: rgba(255, 96, 96, 1);
+  border-radius: 10px;
+  display: flex;
+  align-items: self-end;
+}
+.card-titre {
+  padding-left: 10px;
+  color: white;
+}
