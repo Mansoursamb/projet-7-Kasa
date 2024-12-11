@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div>
@@ -15,6 +16,9 @@ function App() {
         <Card />
         <Card />
         <Card />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

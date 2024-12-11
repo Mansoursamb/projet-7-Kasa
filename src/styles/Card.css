@@ -10,3 +10,8 @@
   padding-left: 10px;
   color: white;
 }
+@media screen and (width <= 768px) {
+  .Card {
+    max-width: 100%;
+  }
+}

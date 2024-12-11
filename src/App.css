@@ -32,6 +32,16 @@
   gap: 20px;
   max-width: 1240px;
   flex-wrap: wrap;
+  padding: 30px;
+  background-color: rgba(246, 246, 246, 1);
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (width <= 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 @keyframes App-logo-spin {

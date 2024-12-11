@@ -7,6 +7,7 @@ function Header() {
       <img src={logo} alt="Kasa" className="lmj-logo" />
       <ul className="nav">
         <li>Accueil</li>
+
         <li>A Propos</li>
       </ul>
     </div>
