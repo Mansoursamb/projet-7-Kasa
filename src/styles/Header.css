@@ -11,3 +11,13 @@
 .lmj-logo {
   height: 50px;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: rgba(255, 96, 96, 1);
+}
+a:active {
+  text-decoration: underline;
+}
