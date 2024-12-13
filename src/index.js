@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
 import Apart from "./components/Apart";
+import Description from "./components/Description";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +38,7 @@ const router = createBrowserRouter([
       <>
         <Header />
         <Apart />
+        <Description />
         <Footer />
       </>
     ),

@@ -1,0 +1,46 @@
+.description h3,
+.equipement h3 {
+  background-color: rgba(255, 96, 96, 1);
+  color: white;
+  width: 95%;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10px;
+}
+.description,
+.equipement {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.description i,
+.equipement i {
+  margin-left: -30px;
+  cursor: pointer;
+  color: white;
+}
+.fa-chevron-down {
+  display: none;
+}
+.descriptif {
+  width: 100%;
+  display: none;
+}
+.equip ul {
+  width: 100%;
+  display: none;
+}
+.atouts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media screen and (width <= 768px) {
+  .atouts {
+    grid-template-columns: 1fr;
+  }
+}

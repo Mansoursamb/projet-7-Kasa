@@ -35,6 +35,8 @@
 .apart-conteneur {
   display: flex;
   justify-content: space-between;
+  margin-right: 0;
+  padding-right: 0;
 }
 .apart {
   padding-bottom: 20px;
@@ -42,10 +44,22 @@
 .apart-name {
   display: flex;
   align-content: flex-end;
+  margin-right: 0;
+  padding-right: 0;
 }
 .apart-name h3 {
   color: rgba(255, 96, 96, 1);
 }
+.align-custom {
+  text-align: left; /* Garde "Alexandre" aligné à gauche */
+}
+
+.align-right {
+  display: inline-block; /* Permet de contrôler le positionnement */
+  margin-left: auto; /* Pousse "..Dumas" à droite */
+  padding-left: 30px; /* Ajuste l'espacement selon vos besoins */
+}
+
 .badge {
   height: 64px;
   width: 64px;
@@ -53,12 +67,38 @@
   border-radius: 50%;
   margin-left: 10px;
   margin-top: 10px;
+  margin-right: 0;
+  padding-right: 0;
 }
 .rating {
+  display: flex;
   margin-top: 10px;
+  margin-right: 0;
+  padding-right: 0;
   place-self: flex-end;
+  gap: 20px;
 }
-.fa-regular.fa-star {
-  gap: 50px;
-  background-color: gray;
+.rating i {
+  color: rgb(218, 200, 200);
+}
+.apart-detail {
+  padding-right: 10px;
+}
+
+@media screen and (width <= 768px) {
+  .apart-conteneur {
+    flex-direction: column;
+  }
+  .apart-detail {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rating i {
+    align-self: center;
+  }
+  .rating {
+    padding-bottom: 20px;
+  }
 }

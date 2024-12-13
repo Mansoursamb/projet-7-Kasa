@@ -22,27 +22,39 @@ function Apart() {
           </div>
           <div className="apart-detail">
             <div className="apart-name">
-              <h3>
-                Alexandre <br></br> Dumas
+              <h3 className="align-custom">
+                Alexandre <br />
+                <span className="align-right">Dumas</span>
               </h3>
+
               <div className="badge"></div>
             </div>
             <div className="rating">
-              <span>
-                <i className="fa-regular fa-star" key={1}></i>
-              </span>
-              <span>
-                <i className="fa-regular fa-star" key={2}></i>
-              </span>
-              <span>
-                <i className="fa-regular fa-star" key={3}></i>
-              </span>
-              <span>
-                <i className="fa-regular fa-star" key={4}></i>
-              </span>
-              <span>
-                <i className="fa-regular fa-star" key={5}></i>
-              </span>
+              <div>
+                <span>
+                  <i className="fa-solid fa-star" key={1}></i>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <i className="fa-solid fa-star" key={2}></i>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <i className="fa-solid fa-star" key={3}></i>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <i className="fa-solid fa-star" key={4}></i>
+                </span>
+              </div>
+              <div>
+                <span>
+                  <i className="fa-solid fa-star" key={5}></i>
+                </span>
+              </div>
             </div>
           </div>
         </div>
