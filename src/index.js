@@ -4,20 +4,41 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Banner from "./components/Banner";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <h1>404 not found</h1>,
+    errorElement: (
+      <>
+        <Header />
+        <h1>404 not found</h1>,
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/about",
-    element: <h1>A Propos</h1>,
+    element: (
+      <>
+        <Header />
+        <Banner />
+        <h1>A Propos</h1>
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/apart",
-    element: <h1>Appartements</h1>,
+    element: (
+      <>
+        <Header />
+        <h1>Nos apartements</h1>
+        <Footer />
+      </>
+    ),
   },
 ]);
 
