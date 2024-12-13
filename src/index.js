@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Banner from "./components/Banner";
+import Apart from "./components/Apart";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Header />
-        <h1>Nos apartements</h1>
+        <Apart />
         <Footer />
       </>
     ),

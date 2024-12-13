@@ -1,0 +1,64 @@
+* {
+  font-family: "Montserrat", sans serif;
+}
+.lmj-apart {
+  object-fit: cover;
+  max-width: 100%;
+  margin-top: 20px;
+  height: 415px;
+  width: 100%;
+  border-radius: 25px;
+}
+.apart-title {
+  margin-bottom: 0;
+  color: rgba(255, 96, 96, 1);
+}
+.apart-subtitle {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.confort-text {
+  display: flex;
+  gap: 10px;
+}
+.confort-text p {
+  background-color: rgba(255, 96, 96, 1);
+  border-radius: 5px;
+  width: 100px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 0;
+}
+.apart-conteneur {
+  display: flex;
+  justify-content: space-between;
+}
+.apart {
+  padding-bottom: 20px;
+}
+.apart-name {
+  display: flex;
+  align-content: flex-end;
+}
+.apart-name h3 {
+  color: rgba(255, 96, 96, 1);
+}
+.badge {
+  height: 64px;
+  width: 64px;
+  background-color: rgba(196, 196, 196, 1);
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.rating {
+  margin-top: 10px;
+  place-self: flex-end;
+}
+.fa-regular.fa-star {
+  gap: 50px;
+  background-color: gray;
+}
