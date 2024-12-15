@@ -26,12 +26,19 @@
   display: none;
 }
 .descriptif {
-  width: 100%;
   display: block;
+  margin-left: 0;
+}
+.text {
+  margin-left: 0;
+  padding-left: 10px;
+  list-style-type: none;
 }
 .equip ul {
   width: 100%;
   display: block;
+  list-style-type: none;
+  padding-left: 10px;
 }
 .atouts {
   display: grid;

@@ -7,14 +7,20 @@ function Header() {
   return (
     <div className="top-menu">
       <img src={logo} alt="Kasa" className="lmj-logo" />
-      <ul className="nav">
-        <NavLink to="/">
-          <li>Accueil</li>
+      <nav className="nav">
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Accueil
         </NavLink>
-        <NavLink to="/about">
-          <li>A Propos</li>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          À propos
         </NavLink>
-      </ul>
+      </nav>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import Image from "./assets/Image source 2.png";
@@ -17,7 +17,14 @@ const router = createBrowserRouter([
     errorElement: (
       <>
         <Header />
-        <h1>404 not found</h1>,
+        <div className="error">
+          <h1>404 </h1>
+          <h2>Oups! La page que vous demandez n'existe pas.</h2>
+          <Link>
+            <p>Retourner sur la page d' accueil</p>
+          </Link>
+        </div>
+        ,
         <Footer />
       </>
     ),
@@ -65,8 +72,10 @@ const router = createBrowserRouter([
           title={<h3>Equipement</h3>}
           text={
             <p>
-              Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser
-              Sèche-cheveux Cintres
+              <li>parking</li>
+              <li>seche-cheveux</li>
+              <li>machine a laver</li>
+              <li></li>
             </p>
           }
         />

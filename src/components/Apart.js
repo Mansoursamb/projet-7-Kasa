@@ -1,18 +1,21 @@
 import React from "react";
 import "../styles/Apart.css";
 import image from "../assets/hero 2.jpg";
+import works from "../assets/data.json";
 function Apart() {
+  works.map((work) => {
+    console.log(works);
+    return works;
+  });
   return (
     <>
-      <div className="apart">
+      <div className="apart" key={works.id}>
         <div>
           <img src={image} alt="Apart" className="lmj-apart" />
         </div>
         <div className="apart-conteneur">
           <div className="apart-container">
-            <h1 className="apart-title">
-              Paris center, on the romantic Canal Saint-Martin
-            </h1>
+            <h1 className="apart-title">{works[0].title}</h1>
             <h3 className="apart-subtitle"> Paris, Île-de-France</h3>
             <div className="confort-text">
               <p>Cozy</p>
@@ -26,33 +29,32 @@ function Apart() {
                 Alexandre <br />
                 <span className="align-right">Dumas</span>
               </h3>
-
               <div className="badge"></div>
             </div>
             <div className="rating">
               <div>
                 <span>
-                  <i className="fa-solid fa-star" key={1}></i>
+                  <i className="fa-solid fa-star"></i>
                 </span>
               </div>
               <div>
                 <span>
-                  <i className="fa-solid fa-star" key={2}></i>
+                  <i className="fa-solid fa-star"></i>
                 </span>
               </div>
               <div>
                 <span>
-                  <i className="fa-solid fa-star" key={3}></i>
+                  <i className="fa-solid fa-star"></i>
                 </span>
               </div>
               <div>
                 <span>
-                  <i className="fa-solid fa-star" key={4}></i>
+                  <i className="fa-solid fa-star"></i>
                 </span>
               </div>
               <div>
                 <span>
-                  <i className="fa-solid fa-star" key={5}></i>
+                  <i className="fa-solid fa-star"></i>
                 </span>
               </div>
             </div>
