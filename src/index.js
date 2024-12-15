@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
+import Image from "./assets/Image source 2.png";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -26,8 +27,29 @@ const router = createBrowserRouter([
     element: (
       <>
         <Header />
-        <Banner />
-        <h1>A Propos</h1>
+        <Banner imageSrc={Image} text={""} />
+        <Description
+          titre={<h3>Fiabilité</h3>}
+          title={<h3>Service</h3>}
+          text={
+            <p>
+              Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser
+              Sèche-cheveux Cintres
+            </p>
+          }
+        />
+        <Description
+          titre={<h3>Respect</h3>}
+          title={<h3>Securite</h3>}
+          text={
+            <p>
+              <li>parking</li>
+              <li>seche-cheveux</li>
+              <li>machine a laver</li>
+              <li></li>
+            </p>
+          }
+        />
         <Footer />
       </>
     ),
@@ -38,7 +60,16 @@ const router = createBrowserRouter([
       <>
         <Header />
         <Apart />
-        <Description />
+        <Description
+          titre={<h3>Description</h3>}
+          title={<h3>Equipement</h3>}
+          text={
+            <p>
+              Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser
+              Sèche-cheveux Cintres
+            </p>
+          }
+        />
         <Footer />
       </>
     ),

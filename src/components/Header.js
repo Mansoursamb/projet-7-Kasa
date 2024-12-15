@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../assets/logo.png";
 import "../styles/Header.css";
 import { NavLink } from "react-router-dom";
-import Footer from "./Footer";
+
 function Header() {
   return (
     <div className="top-menu">

@@ -27,11 +27,11 @@
 }
 .descriptif {
   width: 100%;
-  display: none;
+  display: block;
 }
 .equip ul {
   width: 100%;
-  display: none;
+  display: block;
 }
 .atouts {
   display: grid;
